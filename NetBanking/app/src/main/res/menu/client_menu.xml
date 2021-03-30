@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Transaction">
+        <menu>
+            <item
+                android:id="@+id/fund_transfer_menu"
+                android:icon="@drawable/money"
+                android:title="Fund Transfer" />
+            <item
+                android:id="@+id/transaction_history_menu"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="Transaction History" />
+            <item
+                android:id="@+id/favourite_transaction"
+                android:icon="@android:drawable/btn_star"
+                android:title="Favourite Transactions" />
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/upipayment"
+        android:title="UPI" />
+    <item
+        android:icon="@drawable/servicessupport"
+        android:title="Services and Support" />
+    <item
+        android:icon="@drawable/settingsline"
+        android:title="Account Settings">
+        <menu>
+            <item
+                android:id="@+id/change_password_menu"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/client_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
