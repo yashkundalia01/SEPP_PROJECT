@@ -44,12 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         username = mEditTextUsername.getText().toString();
         password = mEditTexPassword.getText().toString();
-
-        if (username.equals("yash123") && password.equals("yash123")){
-            Intent i = new Intent(this, EmployeeActivity.class);
-            startActivity(i);
-        }
-        else if (!username.isEmpty() && !password.isEmpty()){
+        if (!username.isEmpty() && !password.isEmpty()){
 
             myRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
